@@ -13,3 +13,6 @@ class LeafNode(HTMLNode):
         if self.props:
             props_str = " " + " ".join(f'{key}="{value}"' for key, value in self.props.items())
         return f"<{self.tag}{props_str}>{self.value}</{self.tag}>"
+    
+    def __repr__(self):
+        return f"LeafNode({self.tag}, {self.value}, {self.props})"
