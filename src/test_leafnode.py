@@ -19,5 +19,5 @@ class TestLeafNode(unittest.TestCase):
         with self.assertRaises(ValueError):
             LeafNode("p", None)
 
-if __name__=="__main__":
+if __name__ == "__main__":
     unittest.main
